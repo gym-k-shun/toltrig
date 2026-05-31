@@ -1,0 +1,23 @@
+name: ci
+on: [push, pull_request]
+jobs:
+  build:
+    strategy:
+      matrix:
+        include:
+          - { os: ubuntu-latest, cxx: g++ }
+          - { os: ubuntu-latest, cxx: clang++ }
+          - { os: macos-latest, cxx: clang++ }
+          - { os: windows-latest, cxx: cl }
+    runs-on: ${{ matrix.os }}
+    env: { CXX: "${{ matrix.cxx }}" }
+    steps:
+      - uses: actions/checkout@v4
+      - run: cmake -S . -B build
+      - run: cmake --build build --config Release
+      - run: ctest --test-dir build -C Release --output-on-failure
+      - run: cmake --build build --config Release --target toltrig_bench
+      - if: runner.os != 'Windows'
+        run: ./build/toltrig_bench --quick --csv smoke.csv
+      - if: runner.os == 'Windows'
+        run: ./build/Release/toltrig_bench.exe --quick --csv smoke.csv
