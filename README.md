@@ -41,6 +41,7 @@ See [docs/accuracy.md](docs/accuracy.md). Validate against your actual input bou
 ```sh
 ./build/toltrig_bench --quick --csv results.csv
 ./build/toltrig_diagnostic --quick --csv diagnostic.csv
+./build/toltrig_tan_bench --quick --csv tan-results.csv
 ```
 
 ## Reproducibility
@@ -48,6 +49,18 @@ Report platform, compiler, flags, range, sample count, warm-up count, trials, an
 
 ## Limitations
 v0.1 implements `double` cosine only. `bounded_nearbyint` is not a huge-argument reducer.
+
+## Experimental tangent support
+Experimental tangent support is available under `toltrig::experimental`.
+
+This implementation is:
+- bounded-input oriented
+- not correctly rounded
+- not a huge-argument reducer
+- not part of the stable API
+
+See [docs/tan_design.md](docs/tan_design.md) and
+[docs/tan_accuracy.md](docs/tan_accuracy.md).
 
 ## Roadmap
 See [docs/future_work.md](docs/future_work.md).
