@@ -22,7 +22,11 @@ jobs:
         run: ./build/toltrig_bench --quick --csv smoke.csv
       - if: runner.os != 'Windows'
         run: ./build/toltrig_tan_bench --quick --csv tan-smoke.csv
+      - if: runner.os != 'Windows'
+        run: ./build/toltrig_sin_bench --quick --csv sin-smoke.csv
       - if: runner.os == 'Windows'
         run: ./build/Release/toltrig_bench.exe --quick --csv smoke.csv
       - if: runner.os == 'Windows'
         run: ./build/Release/toltrig_tan_bench.exe --quick --csv tan-smoke.csv
+      - if: runner.os == 'Windows'
+        run: ./build/Release/toltrig_sin_bench.exe --quick --csv sin-smoke.csv

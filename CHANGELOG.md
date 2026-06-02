@@ -3,6 +3,7 @@
 - Added experimental bounded-input tangent support under `toltrig::experimental`.
 - Added an explicitly continuous `pi / 4` reciprocal switch, tangent tests,
   benchmarks, diagnostics, and design notes.
+- Added experimental sine candidates, tests, benchmarks, and diagnostics.
 
 ## 0.1.0
 - Initial experimental C++17 header-only cosine approximation.

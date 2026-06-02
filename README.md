@@ -42,6 +42,7 @@ See [docs/accuracy.md](docs/accuracy.md). Validate against your actual input bou
 ./build/toltrig_bench --quick --csv results.csv
 ./build/toltrig_diagnostic --quick --csv diagnostic.csv
 ./build/toltrig_tan_bench --quick --csv tan-results.csv
+./build/toltrig_sin_bench --quick --csv sin-results.csv
 ```
 
 ## Reproducibility
@@ -61,6 +62,14 @@ This implementation is:
 
 See [docs/tan_design.md](docs/tan_design.md) and
 [docs/tan_accuracy.md](docs/tan_accuracy.md).
+
+## Experimental sine support
+Experimental sine support is available under `toltrig::experimental`.
+It is not part of the stable API.
+
+The repository compares direct sine Taylor evaluation against cosine reuse
+through a phase shift. See [docs/sin_design.md](docs/sin_design.md) and
+[docs/sin_accuracy.md](docs/sin_accuracy.md).
 
 ## Roadmap
 See [docs/future_work.md](docs/future_work.md).

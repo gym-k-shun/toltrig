@@ -4,4 +4,6 @@
 - Cody-Waite and Payne-Hanek reduction
 - SIMD backend and explicit FMA
 - Minimax coefficients
-- `float`, fixed-point, `sin`, `sincos`, and `tan`
+- `float`, fixed-point, stable `sin`, `sincos`, and stable `tan`
+- Production-grade reduction and cross-platform measurements for the
+  experimental sine and tangent candidates
