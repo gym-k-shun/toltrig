@@ -105,16 +105,16 @@ int reference_quadrant(const char* model, double x) {
 }
 
 long double reference_pole_distance(double x) {
-  return std::fabsl(std::remainderl(static_cast<long double>(x) - ld_half_pi, ld_pi));
+  return std::fabs(std::remainderl(static_cast<long double>(x) - ld_half_pi, ld_pi));
 }
 
 long double model_pole_distance(const char* model, sample_result r) {
-  const long double ar = std::fabsl(static_cast<long double>(r.value));
+  const long double ar = std::fabs(static_cast<long double>(r.value));
   if (std::string(model) == "nearbyint_half_pi" ||
       std::string(model) == "cody_waite_half_pi") {
-    return (r.quadrant & 1) ? ar : std::fabsl(ld_half_pi - ar);
+    return (r.quadrant & 1) ? ar : std::fabs(ld_half_pi - ar);
   }
-  return std::fabsl(ld_half_pi - ar);
+  return std::fabs(ld_half_pi - ar);
 }
 
 reduction_stats analyze(const std::vector<double>& v, const char* name, reducer f) {
@@ -127,7 +127,7 @@ reduction_stats analyze(const std::vector<double>& v, const char* name, reducer 
       continue;
     }
     const long double ref = reference_value(name, x);
-    const double e = static_cast<double>(std::fabsl(static_cast<long double>(got.value) - ref));
+    const double e = static_cast<double>(std::fabs(static_cast<long double>(got.value) - ref));
     s.max_error = std::max(s.max_error, e);
     s.mean_error += e;
     ss += static_cast<long double>(e) * e;
@@ -136,7 +136,7 @@ reduction_stats analyze(const std::vector<double>& v, const char* name, reducer 
     const long double dref = reference_pole_distance(x);
     const long double dgot = model_pole_distance(name, got);
     const double risk = static_cast<double>(
-        std::fabsl(dgot - dref) / std::max(dref, 1.0e-18L));
+        std::fabs(dgot - dref) / std::max(dref, 1.0e-18L));
     s.tan_pole_risk = std::max(s.tan_pole_risk, risk);
   }
   if (!v.empty()) {
