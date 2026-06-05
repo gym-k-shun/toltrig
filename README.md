@@ -1,11 +1,53 @@
 # toltrig
 
-## What is toltrig?
-toltrig is not a universal replacement for `std::cos`.
-It is an experimental C++17 header-only library for bounded-input and tolerance-aware cosine approximation.
+Fast bounded trigonometry kernels for C++17.
+
+toltrig is for code that calls trigonometric functions many times while already
+knowing the input range: simulations, animation phases, particle systems,
+signal experiments, visualizers, and other tolerance-aware hot loops.
+
+It trades universal `libm` guarantees for small header-only kernels with
+measured error and reproducible benchmarks.
+
+![toltrig benchmark summary](docs/assets/benchmark-summary.svg)
+
+## Why it exists
+
+`std::cos` is the right default when inputs are arbitrary and correctness
+requirements are strict. In bounded-input workloads, that generality can be
+more than the application needs.
+
+toltrig makes that trade explicit:
+
+| Use it when... | Avoid it when... |
+| --- | --- |
+| your angle range is documented | inputs may be huge or arbitrary |
+| absolute error is acceptable | correctly-rounded results are required |
+| trig calls are in a measured hot loop | speed claims are not benchmarked locally |
+| a C++17 header-only dependency is useful | you need a production `libm` replacement |
+
+Current stable focus: bounded `double` cosine. Experimental sine and tangent
+kernels are available under `toltrig::experimental`.
+
+## Current result summary
+
+Measured results are platform-specific. On one M3 Pro Apple clang run,
+`cos_bounded_n7` reached `3.78x` with `-O3` and `4.91x` with `-O3 -ffast-math`
+versus `std::cos` on `[-1e6,1e6]`. Windows/MSVC gains were much smaller.
+Keep negative results.
+
+## Quick example
+
+```cpp
+#include <toltrig/toltrig.hpp>
+
+double y = toltrig::cos_bounded_n8(toltrig::pi / 3.0);
+```
 
 ## What toltrig is not
-It does not claim universal speedup, correctly-rounded results, or production-grade huge-argument reduction.
+
+It does not claim universal speedup, correctly-rounded results, or
+production-grade huge-argument reduction.
 
 ## Origin: Original pi-switch Formulation
 The research started from:
@@ -15,20 +57,11 @@ f(\theta)=(-1)^{\lfloor\theta/\pi\rfloor}\sum_{k=0}^{10}
 ```
 Later analysis found that `[0, pi)` is too wide for a zero-centered Taylor polynomial to guarantee high accuracy. The current bounded candidate uses `nearbyint(x / pi)` to target approximately `[-pi/2, pi/2]`.
 
-## Current result summary
-Measured results are platform-specific. On one M3 Pro Apple clang run, bounded N=7 reached `3.78x` with `-O3` and `4.91x` with `-O3 -ffast-math` versus `std::cos` on `[-1e6,1e6]`. Windows/MSVC gains were much smaller. Keep negative results.
-
 ## Installation
 ```sh
 cmake -S . -B build
 cmake --build build --config Release
 ctest --test-dir build -C Release --output-on-failure
-```
-
-## Quick example
-```cpp
-#include <toltrig/toltrig.hpp>
-double y = toltrig::cos_bounded_n8(toltrig::pi / 3.0);
 ```
 
 ## API overview

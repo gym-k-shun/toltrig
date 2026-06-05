@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="560" viewBox="0 0 1080 560" role="img" aria-labelledby="title desc">
+  <title id="title">toltrig benchmark summary</title>
+  <desc id="desc">A benchmark-oriented hero image explaining toltrig as bounded-input trigonometry kernels with measured error and reproducible benchmarks.</desc>
+
+  <defs>
+    <linearGradient id="panel" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#111827"/>
+      <stop offset="1" stop-color="#0b1120"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#16a34a"/>
+      <stop offset="1" stop-color="#84cc16"/>
+    </linearGradient>
+    <linearGradient id="cyan" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#0284c7"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+    <filter id="softShadow" x="-5%" y="-8%" width="110%" height="120%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#020617" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <rect width="1080" height="560" fill="#0f172a"/>
+  <rect x="24" y="24" width="1032" height="512" rx="10" fill="url(#panel)" stroke="#334155"/>
+
+  <g font-family="Inter, Segoe UI, Arial, sans-serif">
+    <text x="58" y="74" fill="#f8fafc" font-size="34" font-weight="760">toltrig</text>
+    <text x="183" y="74" fill="#e2e8f0" font-size="28" font-weight="650">Fast bounded trigonometry kernels for C++17</text>
+    <text x="60" y="111" fill="#cbd5e1" font-size="17">For hot loops where the input range is known, error is measured, and benchmarks are reproducible.</text>
+
+    <g transform="translate(60 147)">
+      <rect width="300" height="38" rx="19" fill="#172554" stroke="#2563eb"/>
+      <circle cx="24" cy="19" r="7" fill="#60a5fa"/>
+      <text x="44" y="25" fill="#dbeafe" font-size="15" font-weight="650">bounded input</text>
+    </g>
+    <g transform="translate(383 147)">
+      <rect width="300" height="38" rx="19" fill="#052e16" stroke="#16a34a"/>
+      <circle cx="24" cy="19" r="7" fill="#86efac"/>
+      <text x="44" y="25" fill="#dcfce7" font-size="15" font-weight="650">measured error</text>
+    </g>
+    <g transform="translate(706 147)">
+      <rect width="300" height="38" rx="19" fill="#312e81" stroke="#6366f1"/>
+      <circle cx="24" cy="19" r="7" fill="#a5b4fc"/>
+      <text x="44" y="25" fill="#e0e7ff" font-size="15" font-weight="650">reproducible benchmarks</text>
+    </g>
+
+    <g transform="translate(60 218)" filter="url(#softShadow)">
+      <rect width="468" height="212" rx="8" fill="#111827" stroke="#334155"/>
+      <text x="26" y="36" fill="#93c5fd" font-size="13" font-weight="760">M3 PRO BEST-CASE OBSERVATION</text>
+      <text x="26" y="64" fill="#f8fafc" font-size="22" font-weight="720">bounded cosine workload</text>
+      <text x="26" y="91" fill="#cbd5e1" font-size="14">Apple clang, [-1e6, 1e6], measured against std::cos</text>
+
+      <text x="26" y="126" fill="#e2e8f0" font-size="14">std::cos baseline</text>
+      <rect x="184" y="112" width="76" height="18" rx="4" fill="#475569"/>
+      <text x="274" y="127" fill="#94a3b8" font-size="13">1.00x</text>
+
+      <text x="26" y="158" fill="#e2e8f0" font-size="14">toltrig -O3</text>
+      <rect x="184" y="144" width="218" height="18" rx="4" fill="url(#green)"/>
+      <rect x="350" y="136" width="72" height="34" rx="17" fill="#052e16" stroke="#22c55e"/>
+      <text x="369" y="158" fill="#bbf7d0" font-size="15" font-weight="760">3.78x</text>
+
+      <text x="26" y="190" fill="#e2e8f0" font-size="14">toltrig fast-math</text>
+      <rect x="184" y="176" width="270" height="18" rx="4" fill="url(#cyan)"/>
+      <rect x="376" y="168" width="76" height="34" rx="17" fill="#082f49" stroke="#38bdf8"/>
+      <text x="394" y="190" fill="#cffafe" font-size="15" font-weight="760">4.91x</text>
+    </g>
+
+    <g transform="translate(552 218)" filter="url(#softShadow)">
+      <rect width="468" height="212" rx="8" fill="#111827" stroke="#334155"/>
+      <text x="26" y="36" fill="#fca5a5" font-size="13" font-weight="760">WINDOWS / MSVC OBSERVATIONS</text>
+      <text x="26" y="64" fill="#f8fafc" font-size="22" font-weight="720">cross-platform reality check</text>
+      <text x="26" y="91" fill="#cbd5e1" font-size="14">Broad ranges can be slower.</text>
+      <text x="26" y="111" fill="#cbd5e1" font-size="14">Negative results are retained.</text>
+
+      <g transform="translate(26 122)">
+        <rect width="416" height="42" rx="7" fill="#172554" stroke="#2563eb"/>
+        <text x="18" y="18" fill="#dbeafe" font-size="13" font-weight="650">sin reduced range</text>
+        <text x="18" y="33" fill="#bfdbfe" font-size="12">5.12 ns/sample -> 4.20 ns/sample</text>
+        <rect x="337" y="9" width="62" height="24" rx="12" fill="#1e3a8a" stroke="#60a5fa"/>
+        <text x="351" y="26" fill="#dbeafe" font-size="13" font-weight="760">1.22x</text>
+      </g>
+
+      <g transform="translate(26 170)">
+        <rect width="416" height="42" rx="7" fill="#052e16" stroke="#16a34a"/>
+        <text x="18" y="18" fill="#dcfce7" font-size="13" font-weight="650">tan reduced range</text>
+        <text x="18" y="33" fill="#bbf7d0" font-size="12">4.32 ns/sample -> 2.17 ns/sample</text>
+        <rect x="337" y="9" width="62" height="24" rx="12" fill="#14532d" stroke="#86efac"/>
+        <text x="351" y="26" fill="#dcfce7" font-size="13" font-weight="760">1.99x</text>
+      </g>
+    </g>
+
+    <g transform="translate(60 456)">
+      <rect width="960" height="44" rx="8" fill="#1e293b" stroke="#475569"/>
+      <text x="24" y="28" fill="#f8fafc" font-size="15" font-weight="700">Measured honestly:</text>
+      <text x="173" y="28" fill="#cbd5e1" font-size="15">not a universal libm replacement, no hidden negative results, validate on your workload.</text>
+    </g>
+  </g>
+</svg>
