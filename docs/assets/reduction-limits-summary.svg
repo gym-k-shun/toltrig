@@ -1,0 +1,240 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="708" height="512" viewBox="0 0 708 512">
+<rect width="100%" height="100%" fill="#fff"/>
+<text x="18" y="24" font-family="Segoe UI, Arial" font-size="16" font-weight="700">toltrig reduction limit map</text>
+<rect x="392" y="12" width="12" height="12" fill="#16a34a"/>
+<text x="408" y="22" font-family="Segoe UI, Arial" font-size="10" fill="#334155">Good</text>
+<rect x="468" y="12" width="12" height="12" fill="#84cc16"/>
+<text x="484" y="22" font-family="Segoe UI, Arial" font-size="10" fill="#334155">OK</text>
+<rect x="544" y="12" width="12" height="12" fill="#f59e0b"/>
+<text x="560" y="22" font-family="Segoe UI, Arial" font-size="10" fill="#334155">Warning</text>
+<rect x="620" y="12" width="12" height="12" fill="#dc2626"/>
+<text x="636" y="22" font-family="Segoe UI, Arial" font-size="10" fill="#334155">Fail</text>
+<text x="124" y="34" font-family="Segoe UI, Arial" font-size="10">nearbyint_pi</text>
+<text x="218" y="34" font-family="Segoe UI, Arial" font-size="10">cody_waite_pi</text>
+<text x="312" y="34" font-family="Segoe UI, Arial" font-size="10">remainder_pi</text>
+<text x="406" y="34" font-family="Segoe UI, Arial" font-size="10">cos_safe</text>
+<text x="500" y="34" font-family="Segoe UI, Arial" font-size="10">sin_safe</text>
+<text x="594" y="34" font-family="Segoe UI, Arial" font-size="10">tan_safe</text>
+<text x="18" y="60" font-family="Segoe UI, Arial" font-size="11">1e0</text>
+<rect x="120" y="44" width="92" height="22" fill="#16a34a"/>
+<text x="126" y="59" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Good</text>
+<rect x="214" y="44" width="92" height="22" fill="#16a34a"/>
+<text x="220" y="59" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Good</text>
+<rect x="308" y="44" width="92" height="22" fill="#16a34a"/>
+<text x="314" y="59" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Good</text>
+<rect x="402" y="44" width="92" height="22" fill="#16a34a"/>
+<text x="408" y="59" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Good</text>
+<rect x="496" y="44" width="92" height="22" fill="#16a34a"/>
+<text x="502" y="59" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Good</text>
+<rect x="590" y="44" width="92" height="22" fill="#dc2626"/>
+<text x="596" y="59" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Fail</text>
+<text x="18" y="84" font-family="Segoe UI, Arial" font-size="11">1e1</text>
+<rect x="120" y="68" width="92" height="22" fill="#16a34a"/>
+<text x="126" y="83" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Good</text>
+<rect x="214" y="68" width="92" height="22" fill="#16a34a"/>
+<text x="220" y="83" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Good</text>
+<rect x="308" y="68" width="92" height="22" fill="#16a34a"/>
+<text x="314" y="83" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Good</text>
+<rect x="402" y="68" width="92" height="22" fill="#16a34a"/>
+<text x="408" y="83" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Good</text>
+<rect x="496" y="68" width="92" height="22" fill="#16a34a"/>
+<text x="502" y="83" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Good</text>
+<rect x="590" y="68" width="92" height="22" fill="#dc2626"/>
+<text x="596" y="83" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Fail</text>
+<text x="18" y="108" font-family="Segoe UI, Arial" font-size="11">1e2</text>
+<rect x="120" y="92" width="92" height="22" fill="#16a34a"/>
+<text x="126" y="107" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Good</text>
+<rect x="214" y="92" width="92" height="22" fill="#16a34a"/>
+<text x="220" y="107" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Good</text>
+<rect x="308" y="92" width="92" height="22" fill="#16a34a"/>
+<text x="314" y="107" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Good</text>
+<rect x="402" y="92" width="92" height="22" fill="#16a34a"/>
+<text x="408" y="107" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Good</text>
+<rect x="496" y="92" width="92" height="22" fill="#16a34a"/>
+<text x="502" y="107" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Good</text>
+<rect x="590" y="92" width="92" height="22" fill="#dc2626"/>
+<text x="596" y="107" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Fail</text>
+<text x="18" y="132" font-family="Segoe UI, Arial" font-size="11">1e3</text>
+<rect x="120" y="116" width="92" height="22" fill="#16a34a"/>
+<text x="126" y="131" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Good</text>
+<rect x="214" y="116" width="92" height="22" fill="#16a34a"/>
+<text x="220" y="131" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Good</text>
+<rect x="308" y="116" width="92" height="22" fill="#16a34a"/>
+<text x="314" y="131" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Good</text>
+<rect x="402" y="116" width="92" height="22" fill="#16a34a"/>
+<text x="408" y="131" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Good</text>
+<rect x="496" y="116" width="92" height="22" fill="#16a34a"/>
+<text x="502" y="131" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Good</text>
+<rect x="590" y="116" width="92" height="22" fill="#dc2626"/>
+<text x="596" y="131" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Fail</text>
+<text x="18" y="156" font-family="Segoe UI, Arial" font-size="11">1e4</text>
+<rect x="120" y="140" width="92" height="22" fill="#16a34a"/>
+<text x="126" y="155" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Good</text>
+<rect x="214" y="140" width="92" height="22" fill="#16a34a"/>
+<text x="220" y="155" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Good</text>
+<rect x="308" y="140" width="92" height="22" fill="#16a34a"/>
+<text x="314" y="155" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Good</text>
+<rect x="402" y="140" width="92" height="22" fill="#16a34a"/>
+<text x="408" y="155" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Good</text>
+<rect x="496" y="140" width="92" height="22" fill="#16a34a"/>
+<text x="502" y="155" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Good</text>
+<rect x="590" y="140" width="92" height="22" fill="#dc2626"/>
+<text x="596" y="155" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Fail</text>
+<text x="18" y="180" font-family="Segoe UI, Arial" font-size="11">1e5</text>
+<rect x="120" y="164" width="92" height="22" fill="#84cc16"/>
+<text x="126" y="179" font-family="Segoe UI, Arial" font-size="10" fill="#fff">OK</text>
+<rect x="214" y="164" width="92" height="22" fill="#16a34a"/>
+<text x="220" y="179" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Good</text>
+<rect x="308" y="164" width="92" height="22" fill="#16a34a"/>
+<text x="314" y="179" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Good</text>
+<rect x="402" y="164" width="92" height="22" fill="#84cc16"/>
+<text x="408" y="179" font-family="Segoe UI, Arial" font-size="10" fill="#fff">OK</text>
+<rect x="496" y="164" width="92" height="22" fill="#84cc16"/>
+<text x="502" y="179" font-family="Segoe UI, Arial" font-size="10" fill="#fff">OK</text>
+<rect x="590" y="164" width="92" height="22" fill="#dc2626"/>
+<text x="596" y="179" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Fail</text>
+<text x="18" y="204" font-family="Segoe UI, Arial" font-size="11">1e6</text>
+<rect x="120" y="188" width="92" height="22" fill="#84cc16"/>
+<text x="126" y="203" font-family="Segoe UI, Arial" font-size="10" fill="#fff">OK</text>
+<rect x="214" y="188" width="92" height="22" fill="#84cc16"/>
+<text x="220" y="203" font-family="Segoe UI, Arial" font-size="10" fill="#fff">OK</text>
+<rect x="308" y="188" width="92" height="22" fill="#84cc16"/>
+<text x="314" y="203" font-family="Segoe UI, Arial" font-size="10" fill="#fff">OK</text>
+<rect x="402" y="188" width="92" height="22" fill="#84cc16"/>
+<text x="408" y="203" font-family="Segoe UI, Arial" font-size="10" fill="#fff">OK</text>
+<rect x="496" y="188" width="92" height="22" fill="#84cc16"/>
+<text x="502" y="203" font-family="Segoe UI, Arial" font-size="10" fill="#fff">OK</text>
+<rect x="590" y="188" width="92" height="22" fill="#dc2626"/>
+<text x="596" y="203" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Fail</text>
+<text x="18" y="228" font-family="Segoe UI, Arial" font-size="11">1e7</text>
+<rect x="120" y="212" width="92" height="22" fill="#84cc16"/>
+<text x="126" y="227" font-family="Segoe UI, Arial" font-size="10" fill="#fff">OK</text>
+<rect x="214" y="212" width="92" height="22" fill="#84cc16"/>
+<text x="220" y="227" font-family="Segoe UI, Arial" font-size="10" fill="#fff">OK</text>
+<rect x="308" y="212" width="92" height="22" fill="#84cc16"/>
+<text x="314" y="227" font-family="Segoe UI, Arial" font-size="10" fill="#fff">OK</text>
+<rect x="402" y="212" width="92" height="22" fill="#84cc16"/>
+<text x="408" y="227" font-family="Segoe UI, Arial" font-size="10" fill="#fff">OK</text>
+<rect x="496" y="212" width="92" height="22" fill="#84cc16"/>
+<text x="502" y="227" font-family="Segoe UI, Arial" font-size="10" fill="#fff">OK</text>
+<rect x="590" y="212" width="92" height="22" fill="#dc2626"/>
+<text x="596" y="227" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Fail</text>
+<text x="18" y="252" font-family="Segoe UI, Arial" font-size="11">1e8</text>
+<rect x="120" y="236" width="92" height="22" fill="#f59e0b"/>
+<text x="126" y="251" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Warning</text>
+<rect x="214" y="236" width="92" height="22" fill="#84cc16"/>
+<text x="220" y="251" font-family="Segoe UI, Arial" font-size="10" fill="#fff">OK</text>
+<rect x="308" y="236" width="92" height="22" fill="#84cc16"/>
+<text x="314" y="251" font-family="Segoe UI, Arial" font-size="10" fill="#fff">OK</text>
+<rect x="402" y="236" width="92" height="22" fill="#f59e0b"/>
+<text x="408" y="251" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Warning</text>
+<rect x="496" y="236" width="92" height="22" fill="#f59e0b"/>
+<text x="502" y="251" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Warning</text>
+<rect x="590" y="236" width="92" height="22" fill="#dc2626"/>
+<text x="596" y="251" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Fail</text>
+<text x="18" y="276" font-family="Segoe UI, Arial" font-size="11">1e9</text>
+<rect x="120" y="260" width="92" height="22" fill="#f59e0b"/>
+<text x="126" y="275" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Warning</text>
+<rect x="214" y="260" width="92" height="22" fill="#f59e0b"/>
+<text x="220" y="275" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Warning</text>
+<rect x="308" y="260" width="92" height="22" fill="#f59e0b"/>
+<text x="314" y="275" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Warning</text>
+<rect x="402" y="260" width="92" height="22" fill="#f59e0b"/>
+<text x="408" y="275" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Warning</text>
+<rect x="496" y="260" width="92" height="22" fill="#f59e0b"/>
+<text x="502" y="275" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Warning</text>
+<rect x="590" y="260" width="92" height="22" fill="#dc2626"/>
+<text x="596" y="275" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Fail</text>
+<text x="18" y="300" font-family="Segoe UI, Arial" font-size="11">1e10</text>
+<rect x="120" y="284" width="92" height="22" fill="#f59e0b"/>
+<text x="126" y="299" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Warning</text>
+<rect x="214" y="284" width="92" height="22" fill="#f59e0b"/>
+<text x="220" y="299" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Warning</text>
+<rect x="308" y="284" width="92" height="22" fill="#f59e0b"/>
+<text x="314" y="299" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Warning</text>
+<rect x="402" y="284" width="92" height="22" fill="#f59e0b"/>
+<text x="408" y="299" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Warning</text>
+<rect x="496" y="284" width="92" height="22" fill="#f59e0b"/>
+<text x="502" y="299" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Warning</text>
+<rect x="590" y="284" width="92" height="22" fill="#dc2626"/>
+<text x="596" y="299" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Fail</text>
+<text x="18" y="324" font-family="Segoe UI, Arial" font-size="11">1e11</text>
+<rect x="120" y="308" width="92" height="22" fill="#f59e0b"/>
+<text x="126" y="323" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Warning</text>
+<rect x="214" y="308" width="92" height="22" fill="#f59e0b"/>
+<text x="220" y="323" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Warning</text>
+<rect x="308" y="308" width="92" height="22" fill="#f59e0b"/>
+<text x="314" y="323" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Warning</text>
+<rect x="402" y="308" width="92" height="22" fill="#f59e0b"/>
+<text x="408" y="323" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Warning</text>
+<rect x="496" y="308" width="92" height="22" fill="#f59e0b"/>
+<text x="502" y="323" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Warning</text>
+<rect x="590" y="308" width="92" height="22" fill="#dc2626"/>
+<text x="596" y="323" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Fail</text>
+<text x="18" y="348" font-family="Segoe UI, Arial" font-size="11">1e12</text>
+<rect x="120" y="332" width="92" height="22" fill="#f59e0b"/>
+<text x="126" y="347" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Warning</text>
+<rect x="214" y="332" width="92" height="22" fill="#f59e0b"/>
+<text x="220" y="347" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Warning</text>
+<rect x="308" y="332" width="92" height="22" fill="#f59e0b"/>
+<text x="314" y="347" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Warning</text>
+<rect x="402" y="332" width="92" height="22" fill="#f59e0b"/>
+<text x="408" y="347" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Warning</text>
+<rect x="496" y="332" width="92" height="22" fill="#f59e0b"/>
+<text x="502" y="347" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Warning</text>
+<rect x="590" y="332" width="92" height="22" fill="#dc2626"/>
+<text x="596" y="347" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Fail</text>
+<text x="18" y="372" font-family="Segoe UI, Arial" font-size="11">1e13</text>
+<rect x="120" y="356" width="92" height="22" fill="#dc2626"/>
+<text x="126" y="371" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Fail</text>
+<rect x="214" y="356" width="92" height="22" fill="#dc2626"/>
+<text x="220" y="371" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Fail</text>
+<rect x="308" y="356" width="92" height="22" fill="#f59e0b"/>
+<text x="314" y="371" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Warning</text>
+<rect x="402" y="356" width="92" height="22" fill="#dc2626"/>
+<text x="408" y="371" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Fail</text>
+<rect x="496" y="356" width="92" height="22" fill="#dc2626"/>
+<text x="502" y="371" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Fail</text>
+<rect x="590" y="356" width="92" height="22" fill="#dc2626"/>
+<text x="596" y="371" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Fail</text>
+<text x="18" y="396" font-family="Segoe UI, Arial" font-size="11">1e14</text>
+<rect x="120" y="380" width="92" height="22" fill="#dc2626"/>
+<text x="126" y="395" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Fail</text>
+<rect x="214" y="380" width="92" height="22" fill="#dc2626"/>
+<text x="220" y="395" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Fail</text>
+<rect x="308" y="380" width="92" height="22" fill="#dc2626"/>
+<text x="314" y="395" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Fail</text>
+<rect x="402" y="380" width="92" height="22" fill="#dc2626"/>
+<text x="408" y="395" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Fail</text>
+<rect x="496" y="380" width="92" height="22" fill="#dc2626"/>
+<text x="502" y="395" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Fail</text>
+<rect x="590" y="380" width="92" height="22" fill="#dc2626"/>
+<text x="596" y="395" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Fail</text>
+<text x="18" y="420" font-family="Segoe UI, Arial" font-size="11">1e15</text>
+<rect x="120" y="404" width="92" height="22" fill="#dc2626"/>
+<text x="126" y="419" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Fail</text>
+<rect x="214" y="404" width="92" height="22" fill="#dc2626"/>
+<text x="220" y="419" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Fail</text>
+<rect x="308" y="404" width="92" height="22" fill="#dc2626"/>
+<text x="314" y="419" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Fail</text>
+<rect x="402" y="404" width="92" height="22" fill="#dc2626"/>
+<text x="408" y="419" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Fail</text>
+<rect x="496" y="404" width="92" height="22" fill="#dc2626"/>
+<text x="502" y="419" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Fail</text>
+<rect x="590" y="404" width="92" height="22" fill="#dc2626"/>
+<text x="596" y="419" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Fail</text>
+<text x="18" y="444" font-family="Segoe UI, Arial" font-size="11">1e16</text>
+<rect x="120" y="428" width="92" height="22" fill="#dc2626"/>
+<text x="126" y="443" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Fail</text>
+<rect x="214" y="428" width="92" height="22" fill="#dc2626"/>
+<text x="220" y="443" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Fail</text>
+<rect x="308" y="428" width="92" height="22" fill="#dc2626"/>
+<text x="314" y="443" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Fail</text>
+<rect x="402" y="428" width="92" height="22" fill="#dc2626"/>
+<text x="408" y="443" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Fail</text>
+<rect x="496" y="428" width="92" height="22" fill="#dc2626"/>
+<text x="502" y="443" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Fail</text>
+<rect x="590" y="428" width="92" height="22" fill="#dc2626"/>
+<text x="596" y="443" font-family="Segoe UI, Arial" font-size="10" fill="#fff">Fail</text>
+<text x="18" y="494" font-family="Segoe UI, Arial" font-size="11" fill="#475569">Generated from Decimal reducer references and platform math pipeline references.</text>
+</svg>
