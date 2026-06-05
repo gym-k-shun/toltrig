@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16)
-project(toltrig VERSION 0.1.0 LANGUAGES CXX)
+project(toltrig VERSION 0.2.0 LANGUAGES CXX)
 include(GNUInstallDirs)
 add_library(toltrig INTERFACE)
 target_include_directories(toltrig INTERFACE $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include> $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>)

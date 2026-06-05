@@ -29,6 +29,12 @@ toltrig makes that trade explicit:
 Current stable focus: bounded `double` cosine. Experimental sine and tangent
 kernels are available under `toltrig::experimental`.
 
+## Versioning
+
+The current pre-release is `0.2.0-alpha.1`. CMake uses project version `0.2.0`
+because the alpha suffix is release metadata rather than a CMake numeric
+version component.
+
 ## Current result summary
 
 Measured results are platform-specific. On one M3 Pro Apple clang run,
@@ -70,6 +76,17 @@ Use `cos_reduced_n7/n8` only for inputs already in `[-pi/2, pi/2]`. Use `cos_bou
 ## Accuracy notes
 See [docs/accuracy.md](docs/accuracy.md). Validate against your actual input bound.
 
+## Documentation map
+- [Accuracy notes](docs/accuracy.md)
+- [Benchmark methodology](docs/benchmark_methodology.md)
+- [Claim policy](docs/claim_policy.md)
+- [Experimental sine design](docs/sin_design.md)
+- [Experimental sine accuracy](docs/sin_accuracy.md)
+- [Experimental tangent design](docs/tan_design.md)
+- [Experimental tangent accuracy](docs/tan_accuracy.md)
+- [Future work](docs/future_work.md)
+- [Release checklist](docs/release_checklist.md)
+
 ## Benchmarking
 ```sh
 ./build/toltrig_bench --quick --csv results.csv
@@ -82,7 +99,10 @@ See [docs/accuracy.md](docs/accuracy.md). Validate against your actual input bou
 Report platform, compiler, flags, range, sample count, warm-up count, trials, and CSV output.
 
 ## Limitations
-v0.1 implements `double` cosine only. `bounded_nearbyint` is not a huge-argument reducer.
+The stable API is focused on bounded `double` cosine. Sine and tangent support
+are experimental and are not part of the stable API. toltrig does not claim
+correctly-rounded results, and nearbyint-based bounded reducers are not
+production-grade huge-argument reducers.
 
 ## Experimental tangent support
 Experimental tangent support is available under `toltrig::experimental`.

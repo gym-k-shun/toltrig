@@ -30,3 +30,11 @@ jobs:
         run: ./build/Release/toltrig_tan_bench.exe --quick --csv tan-smoke.csv
       - if: runner.os == 'Windows'
         run: ./build/Release/toltrig_sin_bench.exe --quick --csv sin-smoke.csv
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ runner.os }}-${{ matrix.cxx }}-benchmark-smoke
+          path: |
+            smoke.csv
+            tan-smoke.csv
+            sin-smoke.csv
+          if-no-files-found: error
