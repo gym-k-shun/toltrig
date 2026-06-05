@@ -11,6 +11,8 @@ measured error and reproducible benchmarks.
 
 ![toltrig benchmark summary](docs/assets/benchmark-summary.svg)
 
+![toltrig range reduction limit map](docs/assets/reduction-limits-summary.svg)
+
 ## Why it exists
 
 `std::cos` is the right default when inputs are arbitrary and correctness
@@ -41,6 +43,11 @@ Measured results are platform-specific. On one M3 Pro Apple clang run,
 `cos_bounded_n7` reached `3.78x` with `-O3` and `4.91x` with `-O3 -ffast-math`
 versus `std::cos` on `[-1e6,1e6]`. Windows/MSVC gains were much smaller.
 Keep negative results.
+
+The range-reduction limit map above classifies reducer behavior over
+`[-10^n, 10^n]` for `n = 0..16`. Current nearbyint/Cody-Waite reducers are
+bounded-input tools, not huge-argument reducers. See
+[docs/reduction_limits.md](docs/reduction_limits.md).
 
 ## Quick example
 
@@ -84,6 +91,7 @@ See [docs/accuracy.md](docs/accuracy.md). Validate against your actual input bou
 - [Experimental sine accuracy](docs/sin_accuracy.md)
 - [Experimental tangent design](docs/tan_design.md)
 - [Experimental tangent accuracy](docs/tan_accuracy.md)
+- [Range reduction limits](docs/reduction_limits.md)
 - [Future work](docs/future_work.md)
 - [Release checklist](docs/release_checklist.md)
 
