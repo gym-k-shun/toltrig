@@ -11,6 +11,8 @@ measured error and reproducible benchmarks.
 
 ![toltrig benchmark summary](docs/assets/benchmark-summary.svg)
 
+![toltrig range reduction limit map](docs/assets/reduction-limits-summary.svg)
+
 ## Why it exists
 
 `std::cos` is the right default when inputs are arbitrary and correctness
@@ -41,6 +43,11 @@ Measured results are platform-specific. On one M3 Pro Apple clang run,
 `cos_bounded_n7` reached `3.78x` with `-O3` and `4.91x` with `-O3 -ffast-math`
 versus `std::cos` on `[-1e6,1e6]`. Windows/MSVC gains were much smaller.
 Keep negative results.
+
+The range-reduction limit map above classifies reducer behavior over
+`[-10^n, 10^n]` for `n = 0..16`. Current nearbyint/Cody-Waite reducers are
+bounded-input tools, not huge-argument reducers. See
+[docs/reduction_limits.md](docs/reduction_limits.md).
 
 ## Quick example
 
@@ -84,6 +91,8 @@ See [docs/accuracy.md](docs/accuracy.md). Validate against your actual input bou
 - [Experimental sine accuracy](docs/sin_accuracy.md)
 - [Experimental tangent design](docs/tan_design.md)
 - [Experimental tangent accuracy](docs/tan_accuracy.md)
+- [Experimental fixed-angle prototype](docs/fixed_angle_experiment.md)
+- [Range reduction limits](docs/reduction_limits.md)
 - [Future work](docs/future_work.md)
 - [Release checklist](docs/release_checklist.md)
 
@@ -93,6 +102,7 @@ See [docs/accuracy.md](docs/accuracy.md). Validate against your actual input bou
 ./build/toltrig_diagnostic --quick --csv diagnostic.csv
 ./build/toltrig_tan_bench --quick --csv tan-results.csv
 ./build/toltrig_sin_bench --quick --csv sin-results.csv
+./build/toltrig_fixed_angle_bench --quick --csv fixed-angle-results.csv
 ```
 
 ## Reproducibility
@@ -123,6 +133,14 @@ It is not part of the stable API.
 The repository compares direct sine Taylor evaluation against cosine reuse
 through a phase shift. See [docs/sin_design.md](docs/sin_design.md) and
 [docs/sin_accuracy.md](docs/sin_accuracy.md).
+
+## Experimental fixed-angle support
+Experimental `uint32_t` turn-scaled angle support is available under
+`toltrig::experimental::fixed` as `sin_u32`, `cos_u32`, and `tan_u32`.
+It is a separate prototype API and does not change the existing `double`
+radian API.
+
+See [docs/fixed_angle_experiment.md](docs/fixed_angle_experiment.md).
 
 ## Roadmap
 See [docs/future_work.md](docs/future_work.md).
